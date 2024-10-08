@@ -1,0 +1,15 @@
+.header {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.headerImage {
+    max-width: 20%;
+    padding: 20px;
+}
+
+.headerTitle {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+}

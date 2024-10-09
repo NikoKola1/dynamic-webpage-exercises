@@ -1,7 +1,15 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .header {
-    padding: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .headerImage {
@@ -13,3 +21,4 @@
     font-family: 'Times New Roman', Times, serif;
     font-size: 60px;
 }
+

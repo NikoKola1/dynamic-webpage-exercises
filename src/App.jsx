@@ -1,22 +1,19 @@
-import { useState } from 'react';
+
 import CompAssignment from './componentAssignment.jsx';
-import { createBrowserRouter, Link, Navigate, RouterProvider, useNavigate } from 'react-router-dom';
-//import OpenDataAssignment from './OpenDataAssignment';
-//import reactLogo from './assets/react.svg'
-//import viteLogo from '/vite.svg'
-//import './App.css'
+import OpenDataAssignment from './opendataassignment.jsx';
+import { createBrowserRouter, Link, RouterProvider} from 'react-router-dom';
 
 function Home(){
   return(
-    <>
+    <div>
       <h2>Choose Assingment to check</h2>
       <Link to='/componentassignment'>
-      <button>component assignment</button>
+        <button>component assignment</button>
       </Link>
       <Link to='/opendataassignment'>
-      <button>opendata assignment coming soon</button>
+        <button>opendata assignment</button>
       </Link>
-    </>
+    </div>
   );
 }
 
@@ -29,17 +26,17 @@ const myRouter = createBrowserRouter([
     path: '/componentassignment',
     element: <CompAssignment/>,
   },
- // {
-  //  path: '/opendataassignment',
-  //  element: <OpenDataAssignment/>
- // };
+  {
+    path: '/opendataassignment',
+    element: <OpenDataAssignment/>
+  },
 ]);
 
 function App() {
   return (
-    <>
+    <div>
       <RouterProvider router={myRouter}/>
-    </>
+    </div>
   );
 }
 

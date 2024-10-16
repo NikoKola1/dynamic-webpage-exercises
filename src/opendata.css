@@ -1,0 +1,19 @@
+.opendata-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
+input, button {
+    margin: 10px;
+    text-align: center;
+}
+
+.opendata-container img {
+    width: 200px;
+    height: 200px;
+}
